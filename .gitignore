@@ -1,0 +1,63 @@
+# macOS system files
+.DS_Store
+
+# node_modules and npm related files
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Expo related files
+.expo/
+.expo-shared/
+.expo/web/cache/
+
+# Android related files
+/android/
+*.apk
+*.jks
+
+# iOS related files
+/ios/
+*.xcworkspace
+*.xcodeproj
+*.xcuserdata
+*.xcconfig
+Pods/
+*.ipa
+*.dSYM
+/ios/build
+
+# Logs
+*.log
+*.log.*
+
+# Babel related files
+.babelrc
+.cache/
+
+# Metro bundler files
+*.metro-bundler-cache/
+*.happypack/
+
+# TypeScript specific files
+*.tsbuildinfo
+
+# Misc
+*.swp
+.idea/
+.vscode/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.development
+
+# Build artifacts
+/build/
+dist/
+
+# Coverage and CI artifacts (if applicable)
+coverage/
+jest/
+.nyc_output/
