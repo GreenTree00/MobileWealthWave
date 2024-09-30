@@ -3,8 +3,12 @@ import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 
 export default function Index() {
   const [formData, setFormData] = useState({
-    name: "", 
-    email: ""
+     date: "", 
+     jobincome: "", 
+     sidehustleincome: "", 
+     stockincome: "", 
+     other: "", 
+     totalincome: ""
   });
 
   const handleSubmit = () => {
@@ -20,21 +24,50 @@ export default function Index() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Name</Text>
+      <Text style={styles.label}>Date</Text>
       <TextInput
         style={styles.input}
-        value={formData.name}
-        onChangeText={(text) => handleChange('name', text)}
-        placeholder="Enter your name"
+        value={formData.date}
+        onChangeText={(text) => handleChange('date', text)}
+        placeholder="Enter Date Please"
       />
 
-      <Text style={styles.label}>Email</Text>
+      <Text style={styles.label}>Job Income</Text>
       <TextInput
         style={styles.input}
-        value={formData.email}
-        onChangeText={(text) => handleChange('email', text)}
-        placeholder="Enter your email"
-        keyboardType="email-address"
+        value={formData.jobincome}
+        onChangeText={(text) => handleChange('jobincome', text)}
+        placeholder=""
+      />
+      <Text style={styles.label}>Side Hustle Income</Text>
+      <TextInput
+        style={styles.input}
+        value={formData.sidehustleincome}
+        onChangeText={(text) => handleChange('sidehustleincome', text)}
+        placeholder=""
+      />
+
+      <Text style={styles.label}>Stock Income</Text>
+      <TextInput
+        style={styles.input}
+        value={formData.stockincome}
+        onChangeText={(text) => handleChange('stockincome', text)}
+        placeholder=""
+      />
+
+<Text style={styles.label}>Other</Text>
+      <TextInput
+        style={styles.input}
+        value={formData.other}
+        onChangeText={(text) => handleChange('other', text)}
+        placeholder=""
+      />
+      <Text style={styles.label}>Total Income</Text>
+      <TextInput
+        style={styles.input}
+        value={formData.totalincome}
+        onChangeText={(text) => handleChange('totalincome', text)}
+        placeholder=""
       />
 
       <Button title="Submit" onPress={handleSubmit} />
